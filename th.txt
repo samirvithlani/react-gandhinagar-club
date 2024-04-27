@@ -1,0 +1,28 @@
+Communcation bw components
+
+1)props
+p ->c
+2)context api
+p ->c->->c->c
+3)redux
+
+
+1)how to create reusable components: props
+
+what is props ?
+is it keyword ???? no
+props represents the properties of the component
+
+only immidiate child can access the props
+
+props drilling... passing props from parent to child to child to child
+
+
+app --> Header --> props
+
+component -->students folder --> 2 component -->Studentrs --> student List
+
+    app --> students[yes] --> studenList[No]
+            props drilling
+app --> students[yes] drill --> studenList[yes]
+
