@@ -26,3 +26,16 @@ component -->students folder --> 2 component -->Studentrs --> student List
             props drilling
 app --> students[yes] drill --> studenList[yes]
 
+------------------------------------------------
+virtual dom : it is light weight copy of real dom
+
+use of virtual dom: when we update the dom,
+ it will update the virtual dom, then it will compare the virtual dom with real dom, 
+ if there is any difference, then it will update the real dom
+ -----------------------
+ state : it is used to store the data of the component
+
+
+ ///useState is a hook, it is used to create the state in the functional component
+ hook : life cycle methods in functional component
+
