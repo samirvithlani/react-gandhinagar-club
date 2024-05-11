@@ -7,22 +7,27 @@ import { MapDemo } from "./components/MapDemo";
 import { UseStateDemo } from "./components/UseStateDemo";
 import { UseStateDemo2 } from "./components/UseStateDemo2";
 import { UseSatteDemo3 } from "./components/UseSatteDemo3";
+import { Route, Routes } from "react-router-dom";
+import { NetflixMovies } from "./netflix/NetflixMovies";
+import { NeflixShows } from "./netflix/NeflixShows";
+import { Navbar } from "./Navbar";
+import { NetflixHome } from "./netflix/NetflixHome";
+import { Error404 } from "./Error404";
 
 function App() {
-
   var title = "React App";
   var color = "red";
 
   return (
     <div className="App">
-      <Header title = {title} color = {color}></Header>
-      {/* <UseStateDemo></UseStateDemo> */}
-      {/* <UseStateDemo2></UseStateDemo2> */}
-      <UseSatteDemo3></UseSatteDemo3>
-      {/* <MapDemo></MapDemo> */}
-      {/* <Students title = {title}></Students> */}
-
-      {/* <Content></Content> */}
+      <Navbar/>
+      <Routes>
+        <Route path="/movies" element={<NetflixMovies />}></Route>
+        <Route path="/shows" element={<NeflixShows />}></Route>
+        <Route path= "" element = {<NetflixHome/>}></Route>
+        {/* <Route path = "/*" element = {<h1>404 page not found</h1>}></Route> */}
+        <Route path = "/*" element = {<Error404/>}></Route>
+      </Routes>
     </div>
   );
 }

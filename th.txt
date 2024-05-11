@@ -38,4 +38,11 @@ use of virtual dom: when we update the dom,
 
  ///useState is a hook, it is used to create the state in the functional component
  hook : life cycle methods in functional component
+---------------------------------------------------------------------------------
 
+
+react routing:
+-------------
+
+npm install react-router-dom v6.x
+<BrowserRouter>
