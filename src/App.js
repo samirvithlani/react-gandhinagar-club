@@ -13,6 +13,9 @@ import { NeflixShows } from "./netflix/NeflixShows";
 import { Navbar } from "./Navbar";
 import { NetflixHome } from "./netflix/NetflixHome";
 import { Error404 } from "./Error404";
+import { ThrillerMovies } from "./netflix/ThrillerMovies";
+import { ComedyMovies } from "./netflix/ComedyMovies";
+import { PlayShow } from "./netflix/PlayShow";
 
 function App() {
   var title = "React App";
@@ -24,6 +27,10 @@ function App() {
       <Routes>
         <Route path="/movies" element={<NetflixMovies />}></Route>
         <Route path="/shows" element={<NeflixShows />}></Route>
+        <Route path = "/movies/thriller" element = {<ThrillerMovies/>}></Route>
+        <Route path = "/comedy" element = {<ComedyMovies/>}></Route>
+        <Route path = "/shows/play/:id" element = {<PlayShow/>}></Route>
+
         <Route path= "" element = {<NetflixHome/>}></Route>
         {/* <Route path = "/*" element = {<h1>404 page not found</h1>}></Route> */}
         <Route path = "/*" element = {<Error404/>}></Route>
