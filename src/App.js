@@ -16,6 +16,7 @@ import { Error404 } from "./Error404";
 import { ThrillerMovies } from "./netflix/ThrillerMovies";
 import { ComedyMovies } from "./netflix/ComedyMovies";
 import { PlayShow } from "./netflix/PlayShow";
+import { FormDemo1 } from "./forms/FormDemo1";
 
 function App() {
   var title = "React App";
@@ -30,7 +31,7 @@ function App() {
         <Route path = "/movies/thriller" element = {<ThrillerMovies/>}></Route>
         <Route path = "/comedy" element = {<ComedyMovies/>}></Route>
         <Route path = "/shows/play/:id" element = {<PlayShow/>}></Route>
-
+        <Route path = "/formdemo1" element = {<FormDemo1/>}></Route>
         <Route path= "" element = {<NetflixHome/>}></Route>
         {/* <Route path = "/*" element = {<h1>404 page not found</h1>}></Route> */}
         <Route path = "/*" element = {<Error404/>}></Route>
