@@ -60,3 +60,12 @@ npm install react-router-dom v6.x
             message:"Age is required*"
         }
     }
+
+
+--------------------------------    
+component
+MyButton.jsx
+
+return
+
+    <button>
