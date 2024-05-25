@@ -46,3 +46,17 @@ react routing:
 
 npm install react-router-dom v6.x
 <BrowserRouter>
+
+{
+    required:{
+        value:true,
+        message:"Age is required*"
+        }
+}
+
+{
+        required:{
+            value:true,
+            message:"Age is required*"
+        }
+    }
