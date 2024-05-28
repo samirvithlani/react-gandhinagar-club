@@ -69,3 +69,32 @@ MyButton.jsx
 return
 
     <button>
+
+
+    -----------------
+depedent dropdown...
+<select>
+select country</selxt>
+
+india
+usa
+
+<select>
+    delhi
+    mumbai
+</select>
+
+
+hint:JSON ARRAY create
+onChage:
+useState
+
+var data =[
+    {
+        name:"INDIA"
+        cities:["","",""]
+    },
+    {
+        
+    }
+]
