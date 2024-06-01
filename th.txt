@@ -98,3 +98,16 @@ var data =[
         
     }
 ]
+api------->
+
+REACT JS : --> js frontend
+UBER | google map :--> 
+GET
+POST
+PUT
+DELETE
+PATCH
+
+----->
+fetch() :--> 
+axios

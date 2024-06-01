@@ -20,6 +20,8 @@ import { FormDemo1 } from "./forms/FormDemo1";
 import { FormDemo2 } from "./forms/FormDemo2";
 import { FormDemo3 } from "./forms/FormDemo3";
 import { FormDemo4 } from "./forms/FormDemo4";
+import { DepedenetDropdown } from "./components/DepedenetDropdown";
+import { ApiDemo1 } from "./api/ApiDemo1";
 
 function App() {
   var title = "React App";
@@ -39,6 +41,8 @@ function App() {
         <Route path = "/formdemo3" element = {<FormDemo3/>}></Route>
         <Route path = "/formdemo4" element = {<FormDemo4/>}></Route>
         <Route path= "" element = {<NetflixHome/>}></Route>
+        <Route path = "/depde" element = {<DepedenetDropdown/>}></Route>
+        <Route path="/apidemo1" element = {<ApiDemo1/>}></Route>
         {/* <Route path = "/*" element = {<h1>404 page not found</h1>}></Route> */}
         <Route path = "/*" element = {<Error404/>}></Route>
       </Routes>
