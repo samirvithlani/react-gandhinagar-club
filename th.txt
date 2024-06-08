@@ -111,3 +111,8 @@ PATCH
 ----->
 fetch() :--> 
 axios
+
+
+useEffect: to handle the side effects in the functional component
+sideEffect: api call, settimeout, setinterval, event listener, etc
+chatApp :  when we open the chat app, we will get the messages from the server
