@@ -1,11 +1,27 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { CutomeLoder } from "../components/CutomeLoder";
+import { Modal } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const ApiDemo1 = () => {
   const [message, setmessage] = useState("");
   const [users, setusers] = useState([]);
   const [isLoding, setisLoding] = useState(false);
+  const [show, setshow] = useState(false);
+  const [user, setuser] = useState({})
+
+  const handleClose = ()=>{
+    setshow(false);
+  }
+
+  const handleOpen = async(userId)=>{
+    //api call to get user details
+    const res = await axios.get(`https://node5.onrender.com/user/user/${userId}`);
+    console.log("user--->>>>",res.data);
+    setuser(res.data.data);
+    setshow(true);
+  }
 
   const getUserData = async () => {
     setisLoding(true);
@@ -38,23 +54,6 @@ export const ApiDemo1 = () => {
   return (
     <div>
       {isLoding && <CutomeLoder />}
-      {/* <button
-        onClick={() => {
-          getUserData();
-        }}
-      >
-        Get User Data
-      </button> */}
-      {/* {message}
-      <ul>
-        {users?.map((user) => {
-          return (
-            <li>
-              {user._id} -- {user.name}
-            </li>
-          );
-        })}
-      </ul> */}
 
       <table className="table table-dark">
         <thead>
@@ -85,12 +84,23 @@ export const ApiDemo1 = () => {
                   >
                     Delete
                   </button>
+                  <button className="btn btn-info"  onClick={()=>handleOpen(user._id)}>Detail</button>
+                  <Link to ={`/updateuser/${user._id}`} className="btn btn-warning">Update</Link>
                 </td>
               </tr>
             );
           })}
         </tbody>
       </table>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>User Detail</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>User Name ={user.name}</p>
+          <p>User Age ={user.age}</p>
+        </Modal.Body>
+      </Modal>
     </div>
   );
 };
