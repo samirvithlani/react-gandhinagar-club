@@ -3,7 +3,7 @@ Communcation bw components
 1)props
 p ->c
 2)context api
-p ->c->->c->c
+    contect globle state:  [company] [wh] [realis,[][][][][]]
 3)redux
 
 
