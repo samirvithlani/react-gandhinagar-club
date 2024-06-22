@@ -54,6 +54,10 @@ export const Navbar = () => {
         <Link to="/google" className="nav-link">Google</Link>
       </li>
       
+      <li class="nav-item">
+        <Link to="/publishblog" className="nav-link">publishblog</Link>
+      </li>
+      
       
     </ul>
     
