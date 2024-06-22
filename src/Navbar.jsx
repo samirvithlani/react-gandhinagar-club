@@ -50,6 +50,9 @@ export const Navbar = () => {
       <li class="nav-item">
         <Link to="/movieapi" className="nav-link">movieapi</Link>
       </li>
+      <li class="nav-item">
+        <Link to="/google" className="nav-link">Google</Link>
+      </li>
       
       
     </ul>

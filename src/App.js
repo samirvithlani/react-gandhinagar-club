@@ -27,6 +27,7 @@ import { ApiDemo2 } from "./api/ApiDemo2";
 import { UpdateUser } from "./api/UpdateUser";
 import { MovieApi } from "./api/MovieApi";
 import { ApiDemo4 } from "./api/ApiDemo4";
+import { Google } from "./contextDemo/Google";
 
 function App() {
   var title = "React App";
@@ -53,6 +54,7 @@ function App() {
         <Route path="/apidemo4" element = {<ApiDemo4/>}></Route>
         <Route path = "/updateuser/:id" element = {<UpdateUser/>}></Route>
         <Route path = "/movieapi" element = {<MovieApi/>}></Route>
+        <Route path = "/google" element = {<Google/>}></Route>
 
         {/* <Route path = "/*" element = {<h1>404 page not found</h1>}></Route> */}
         <Route path = "/*" element = {<Error404/>}></Route>
