@@ -29,6 +29,8 @@ import { MovieApi } from "./api/MovieApi";
 import { ApiDemo4 } from "./api/ApiDemo4";
 import { Google } from "./contextDemo/Google";
 import { PublishBlog } from "./blogs/PublishBlog";
+import { MuiButton } from "./mui/MuiButton";
+import { MuiLayout } from "./mui/MuiLayout";
 
 function App() {
   var title = "React App";
@@ -57,6 +59,8 @@ function App() {
         <Route path = "/movieapi" element = {<MovieApi/>}></Route>
         <Route path = "/google" element = {<Google/>}></Route>
         <Route path ="/publishblog" element = {<PublishBlog/>}></Route>
+        <Route path ="/muibbutton" element = {<MuiButton/>}></Route>
+        <Route path ="/muiLayout" element = {<MuiLayout/>}></Route>
 
         {/* <Route path = "/*" element = {<h1>404 page not found</h1>}></Route> */}
         <Route path = "/*" element = {<Error404/>}></Route>

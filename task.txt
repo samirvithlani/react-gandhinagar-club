@@ -1,0 +1,10 @@
+mui
+ratings:5 excellent
+        4 good
+        3 fair
+        2 poor
+        1 very poor
+slider :
+array : useState [{id:name,salary}]        
+
+dashboard....
