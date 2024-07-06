@@ -8,3 +8,19 @@ slider :
 array : useState [{id:name,salary}]        
 
 dashboard....
+
+ref:::
+https://react-charts.tanstack.com/
+
+1) node api :player name : runs, balls
+{
+        id:objectid,
+        name:"virat",
+        runs:100,
+        balls:50
+
+}
+
+1--> playername , runs
+2_ --> playername --> balls + runs bar stack chart
+2)chartComponent --> props [type]
