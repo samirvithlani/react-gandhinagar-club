@@ -73,6 +73,10 @@ export const Navbar = () => {
         <Link to="/muitable" className="nav-link">muitable</Link>
       </li>
       
+      <li class="nav-item">
+        <Link to="/prod" className="nav-link">prod</Link>
+      </li>
+      
     </ul>
     
   </div>

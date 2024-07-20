@@ -35,6 +35,7 @@ import { ChartDemo1 } from "./charts/ChartDemo1";
 import { MuiTable } from "./mui/MuiTable";
 import { MuiTable2 } from "./mui/MuiTable2";
 import { MyCharts } from "./charts/MyCharts";
+import { ProductComp } from "./components/ProductComp";
 
 function App() {
   var title = "React App";
@@ -67,6 +68,8 @@ function App() {
         <Route path ="/muiLayout" element = {<MuiLayout/>}></Route>
         <Route path ="/muitable" element = {<MuiTable2/>}></Route>
         <Route path = "/chart" element = {<MyCharts/>}></Route>
+        <Route path = "/prod" element = {<ProductComp/>}></Route>
+
 
         {/* <Route path = "/*" element = {<h1>404 page not found</h1>}></Route> */}
         <Route path = "/*" element = {<Error404/>}></Route>
